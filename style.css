@@ -1,0 +1,62 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  background-color: hsl(210, 46%, 95%);
+}
+.item1 {
+  grid-area: menu;
+  background-color: hsl(263, 55%, 52%);
+}
+.item2 {
+  grid-area: main;
+  background-color: hsl(217, 19%, 35%);
+}
+.item3 {
+  grid-area: right;
+  background-color: hsl(0, 0%, 100%);
+}
+.item4 {
+  grid-area: left;
+  background-color: hsl(0, 0%, 100%);
+}
+.item5 {
+  grid-area: main2;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu menu main right" "left main2 main2 right";
+  grid-gap: 2em;
+  padding: 100px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 3px 10px 20px hsl(217, 19%, 70%);
+}
+img {
+  border-radius: 50%;
+}
+
+.profil {
+  line-height: 3px;
+}
+
+@media screen and (max-width: 780px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "menu" "main" "right" "left" "main2";
+  }
+}
